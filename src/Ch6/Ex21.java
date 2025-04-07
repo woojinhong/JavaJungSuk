@@ -1,3 +1,5 @@
+package Ch6;
+
 public class Ex21 {
     public static void main(String[] args) {
 
