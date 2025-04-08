@@ -25,11 +25,13 @@ public class Ex1 {
         for(int i = 0; i <deck.cards.length; i++){
             System.out.print(deck.cards[i]);
         }
+
+
     }
 }
 
 class SutdaCard{
-    int num;
+    final int num;
     boolean isKwang;
 
     SutdaCard(){

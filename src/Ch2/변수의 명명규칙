@@ -1,0 +1,14 @@
+
+
+1. 대소문자가 구분되며 길이에 제한이 없다.
+    - True != true;
+2. 예약어를 사용해서는 안 된다.
+    - true, if, double, else, final 등등 (X)
+    - True, If, Double, Else, Final 가능 (O)
+        - 자바는 대소문자 구별하기 때문에 이는 예약어가 아닌 것
+3. 숫자로 시작해서는 안 된다.
+    - 1box (X)
+    - box1 (O)
+4. 특수문자는 '_'와 '$'만 허용된다
+    - $harp, _h_arp (O)
+    - !harp, h@arp (X)
