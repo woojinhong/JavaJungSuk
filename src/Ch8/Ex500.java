@@ -1,15 +1,21 @@
 package Ch8;
 
+import java.sql.SQLException;
+
 public class Ex500 {
     public static void main(String[] args) {
 
-        int i = Integer.parseInt("100");
 
-        StringBuffer sb = new StringBuffer();
-        sb.append("zz");
+        try{
+            if(false){
+                throw new SQLException();
+            }else {
+                throw new RuntimeException();
+            }
+        }catch(SQLException e){
 
-        System.out.println("sb.capacity() = " + sb.capacity());
-        System.out.println("sb.length() = " + sb.length());
-
+        } finally{
+          throw new IllegalArgumentException();
+        }
     }
 }
