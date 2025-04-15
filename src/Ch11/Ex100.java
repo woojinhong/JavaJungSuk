@@ -10,7 +10,7 @@ public class Ex100 {
         Vector v = new Vector(5);
         String source = "11111111111111111111";
         int length = source.length();
-
+        v.trimToSize();
         List list = new ArrayList(length/LIMIT +10);
 
         for(int i = 0; i < length; i+=LIMIT){
