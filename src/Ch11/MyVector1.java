@@ -1,8 +1,18 @@
 package Ch11;
 
+import jdk.jfr.Description;
+
 import java.util.*;
 
-public class MyVector implements List{
+public class MyVector1{
+    public static void main(String[] args) {
+        MyVector b = new MyVector();
+        
+        b.add(10);
+    }
+}
+
+class MyVector implements List{
 
     Object[] data = null; // 객체를 담기 위한 객체배열을 선언한다.
     int capacity = 0; // 용량
@@ -50,6 +60,9 @@ public class MyVector implements List{
     }
 
     @Override
+    @Deprecated
+    @SuppressWarnings({"deprecation"})
+    @Description("이 메서드는 add 메서드이다")
     public boolean add(Object o) {
         // 새로운 객체를 저장하기 전에 저장할 공간을 확보한다.
         ensureCapacity(size+1);

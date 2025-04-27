@@ -2,12 +2,15 @@ package Ch12;
 
 public class Enums {
     public static void main(String[] args) {
+        Math.abs(-1);
 
 
+
+        Card.abs(-1);
     }
 }
-Enum
 
 class Card{
-    enum  Kind {CLOVER, HEART, DIAMOND, SPAED}
+    static void abs(int i){
+    }
 }

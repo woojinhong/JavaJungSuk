@@ -19,6 +19,7 @@ class Student1{
     int eng;
     int math;
 
+
     public Student1(String name, int ban, int no, int kor, int eng, int math) {
         this.name = name;
         this.ban = ban;

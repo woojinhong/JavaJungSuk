@@ -24,5 +24,17 @@ public class Ex200 {
             System.out.println(obj);
 
 
+        AnnotationTest a = new AnnotationTest();
+        System.out.println(a.print());
+    }
+}
+
+class AnnotationTest{
+    int i = 10;
+    int count;
+
+    @MyAnnotation(count = 3)
+    int print(){
+        return count;
     }
 }

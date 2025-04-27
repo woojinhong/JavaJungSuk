@@ -1,10 +1,15 @@
 package Ch12;
 
-import java.util.ArrayList;
-
-class Generics {
+class Unit{}
+class GroundUnit extends Unit{}
+class Tank extends GroundUnit{}
+public class Generics {
     public static void main(String[] args) {
 
-        System.out.println("args = " + args);
+        Unit u = new GroundUnit();
+
+        Tank t = new Tank();
+
+        t = (Tank)u;
     }
 }
